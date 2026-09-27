@@ -4,26 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇬🇷 希腊 (Greece) 01 - xiaohe",
-      "server": "38.54.29.210",
-      "server_port": 2053,
-      "uuid": "b940be1b-3998-45d2-bf7b-06e7b6c4987a",
+      "type": "vmess",
+      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
+      "server": "nomino.11hi8itbaf.workers.dev",
+      "server_port": 443,
+      "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "kkkk-xcd.pages.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        }
+        "server_name": "nomino.11hi8itbaf.workers.dev",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "kkkk-xcd.pages.dev"
-        }
+        "path": "/guanwang.awsno.com/hls/cctv5phd.m3u8"
       }
     },
     {
@@ -31,14 +25,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇷 希腊 (Greece) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇷 希腊 (Greece) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
