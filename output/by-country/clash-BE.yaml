@@ -20,20 +20,16 @@ proxies:
     headers:
       Host: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
 - name: 🇧🇪 比利时 (Belgium) 02 - xiaohe
-  server: 141.227.137.177
-  port: 2053
+  server: 172.67.155.136
+  port: 2095
   udp: true
   type: vless
-  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
-  tls: true
-  servername: kkkk-xcd.pages.dev
-  skip-cert-verify: false
-  client-fingerprint: random
+  uuid: 73796e63-0000-4000-8000-000000000008
   network: ws
   ws-opts:
-    path: /
+    path: /sync
     headers:
-      Host: kkkk-xcd.pages.dev
+      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
