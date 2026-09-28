@@ -12,18 +12,13 @@ proxies:
   cipher: aes-128-gcm
   password: f9300a9bf39ae0347c3a3bfbc4dd7754
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: 45.149.147.97
+  server: 144.31.212.253
   port: 443
   udp: true
-  type: vless
-  uuid: f28e0ce1-ed75-4e90-b069-5215a80dfb4a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AcuvO982QLzf76fVydfSuJIiF5520rmj7AxpaxyRwUg
-    short-id: d345ad4657adeef9
-  servername: google.com
-  client-fingerprint: safari
+  type: hysteria2
+  password: cf83b611-6cba-4535-adcb-8da06c6a9146
+  sni: vps155-edge.kermemehori.ru
+  skip-cert-verify: false
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
   server: 83.219.97.26
   port: 443
@@ -37,6 +32,19 @@ proxies:
   servername: est1313.ggisopi.su
   client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
+  server: 45.149.147.97
+  port: 443
+  udp: true
+  type: vless
+  uuid: f28e0ce1-ed75-4e90-b069-5215a80dfb4a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: AcuvO982QLzf76fVydfSuJIiF5520rmj7AxpaxyRwUg
+    short-id: d345ad4657adeef9
+  servername: google.com
+  client-fingerprint: safari
+- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -47,8 +55,8 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
     short-id: d368b94e275ab080
   servername: www.google.com
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
   server: 185.79.138.71
   port: 448
   udp: true
@@ -60,29 +68,19 @@ proxies:
     short-id: cd21e552537c7c0b
   servername: www.samsung.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
-  server: 87.120.107.246
+- name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
+  server: 153.52.117.131
   port: 443
   udp: true
   type: vless
-  uuid: 10b78ac4-d4ce-43d2-98c4-c62c96fcbdc2
+  uuid: 3d9daa27-6283-406d-a2d4-c6f22c635a14
   tls: true
-  reality-opts:
-    public-key: 20kKpOl77grCupOod4O_X1u74fJT38yc2Nhxy8enywc
-    short-id: fd4f9db207ff64db
-  servername: dl.google.com
+  servername: fi.astrafic.ru
+  skip-cert-verify: false
   client-fingerprint: firefox
   network: grpc
   grpc-opts:
-    grpc-service-name: grpc-tunnel_nl
-- name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
-  server: 144.31.212.253
-  port: 443
-  udp: true
-  type: hysteria2
-  password: cf83b611-6cba-4535-adcb-8da06c6a9146
-  sni: vps155-edge.kermemehori.ru
-  skip-cert-verify: false
+    grpc-service-name: vless-grpc
 - name: 🇫🇮 芬兰 (Finland) 08 - xiaohe
   server: 144.31.27.215
   port: 43000
@@ -105,7 +103,7 @@ proxies:
   tls: true
   servername: st6dbbc.rumedia-cdn.com
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /cdn/v3/live
@@ -123,7 +121,7 @@ proxies:
     public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
     short-id: 7da2eae792187ab9
   servername: images.unsplash.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

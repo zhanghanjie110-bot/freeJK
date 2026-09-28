@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "shadowsocks",
       "tag": "🇮🇹 意大利 (Italy) 01 - xiaohe",
+      "server": "185.164.175.81",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "vmess",
+      "tag": "🇮🇹 意大利 (Italy) 02 - xiaohe",
       "server": "89.41.172.85",
       "server_port": 22324,
       "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
@@ -13,46 +21,14 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇹 意大利 (Italy) 02 - xiaohe",
+      "tag": "🇮🇹 意大利 (Italy) 03 - xiaohe",
       "server": "204.216.216.23",
       "server_port": 10086,
       "uuid": "9f0285ee-20ca-4953-bcdb-86a920652923"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 (Italy) 03 - xiaohe",
-      "server": "185.164.175.81",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "vless",
       "tag": "🇮🇹 意大利 (Italy) 04 - xiaohe",
-      "server": "31.77.154.14",
-      "server_port": 8443,
-      "uuid": "75079a7f-75b5-418b-8a65-f7b2f438cd4a",
-      "tls": {
-        "enabled": true,
-        "server_name": "swscan.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "3O__mdy-whzI07V-QEyR6GQnag1FNwtHijDxt2_jkDQ",
-          "short_id": ""
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc-tunnel"
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 (Italy) 05 - xiaohe",
       "server": "57.131.48.45",
       "server_port": 8388,
       "method": "aes-256-gcm",
@@ -60,19 +36,27 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 (Italy) 05 - xiaohe",
+      "server": "91.201.65.122",
+      "server_port": 9097,
+      "method": "aes-256-cfb",
+      "password": "Sn5B7jTqr76aCJT8"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇮🇹 意大利 (Italy) 06 - xiaohe",
       "server": "91.201.65.122",
-      "server_port": 9050,
+      "server_port": 9065,
       "method": "aes-256-cfb",
-      "password": "FG5ddLsMPbV5CutE"
+      "password": "PeHSHm5SqEjBuEXE"
     },
     {
       "type": "shadowsocks",
       "tag": "🇮🇹 意大利 (Italy) 07 - xiaohe",
       "server": "91.201.65.122",
-      "server_port": 9074,
+      "server_port": 9039,
       "method": "aes-256-cfb",
-      "password": "p5wSkb2uM3pKSS3j"
+      "password": "qYEN5HX4JKeVCdEC"
     },
     {
       "type": "vless",
@@ -122,9 +106,9 @@
       "type": "shadowsocks",
       "tag": "🇮🇹 意大利 (Italy) 12 - xiaohe",
       "server": "91.201.65.122",
-      "server_port": 9065,
+      "server_port": 9050,
       "method": "aes-256-cfb",
-      "password": "PeHSHm5SqEjBuEXE"
+      "password": "FG5ddLsMPbV5CutE"
     },
     {
       "type": "vless",
@@ -138,7 +122,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -159,17 +143,30 @@
       "type": "shadowsocks",
       "tag": "🇮🇹 意大利 (Italy) 15 - xiaohe",
       "server": "91.201.65.122",
-      "server_port": 9070,
+      "server_port": 9074,
       "method": "aes-256-cfb",
-      "password": "bf7v334KKDV3YDhH"
+      "password": "p5wSkb2uM3pKSS3j"
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇮🇹 意大利 (Italy) 16 - xiaohe",
-      "server": "91.201.65.122",
-      "server_port": 9097,
-      "method": "aes-256-cfb",
-      "password": "Sn5B7jTqr76aCJT8"
+      "server": "204.216.216.23",
+      "server_port": 1114,
+      "uuid": "6ba2eac6-0ec9-44ca-a42b-a8e23aafb530",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "WfkCF0eEuIoO0MyJsKOddU89QrTzCZ4y2dzCJbH99CQ",
+          "short_id": "79a1e14b"
+        }
+      }
     },
     {
       "type": "selector",
