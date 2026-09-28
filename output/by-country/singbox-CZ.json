@@ -6,45 +6,41 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "153.76.185.144",
-      "server_port": 3090,
-      "uuid": "8ac4b519-287e-4ac0-8c95-4c1721c1ab76",
+      "server": "104.21.70.21",
+      "server_port": 8080,
+      "uuid": "20e295db-a6af-4006-bfd6-91453f169968",
       "transport": {
-        "type": "grpc",
-        "service_name": "vless"
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiSFM1N0lLQmx2UU1qRzlnTiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "headers": {
+          "Host": "057.electrocellco-cf-057.workers.dev"
+        }
       }
     },
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 02 - xiaohe",
-      "server": "153.76.185.152",
-      "server_port": 3090,
-      "uuid": "b55a33d7-83ee-416a-971e-eaaa0c928043",
+      "server": "cfoi-2fx16g3-8ry2kdxmcj.wjesv2ila3rxbuhpc2nsugrachgawk.workers.dev",
+      "server_port": 443,
+      "uuid": "513beae3-56e7-4954-a17e-930e06237b27",
+      "tls": {
+        "enabled": true,
+        "server_name": "cfoi-2fx16g3-8ry2kdxmcj.wjesv2ila3rxbuhpc2nsugrachgawk.workers.dev",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
-        "type": "grpc",
-        "service_name": "vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 03 - xiaohe",
-      "server": "153.76.185.86",
-      "server_port": 3090,
-      "uuid": "b55a33d7-83ee-416a-971e-eaaa0c928043",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 04 - xiaohe",
-      "server": "194.87.59.19",
-      "server_port": 2085,
-      "uuid": "b55a33d7-83ee-416a-971e-eaaa0c928043",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
+        "type": "ws",
+        "path": "/vl/1NM75lSM9FVMO5loRH5RSHTFj1g?ed=2560 ",
+        "headers": {
+          "Host": "cfoi-2fx16g3-8ry2kdxmcj.wjesv2ila3rxbuhpc2nsugrachgawk.workers.dev"
+        }
       }
     },
     {
@@ -53,9 +49,7 @@
       "outbounds": [
         "auto",
         "🇨🇿 捷克 (Czech) 01 - xiaohe",
-        "🇨🇿 捷克 (Czech) 02 - xiaohe",
-        "🇨🇿 捷克 (Czech) 03 - xiaohe",
-        "🇨🇿 捷克 (Czech) 04 - xiaohe"
+        "🇨🇿 捷克 (Czech) 02 - xiaohe"
       ]
     },
     {
@@ -63,9 +57,7 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇿 捷克 (Czech) 01 - xiaohe",
-        "🇨🇿 捷克 (Czech) 02 - xiaohe",
-        "🇨🇿 捷克 (Czech) 03 - xiaohe",
-        "🇨🇿 捷克 (Czech) 04 - xiaohe"
+        "🇨🇿 捷克 (Czech) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

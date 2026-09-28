@@ -5,41 +5,31 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 153.76.185.144
-  port: 3090
+  server: 104.21.70.21
+  port: 8080
   udp: true
   type: vless
-  uuid: 8ac4b519-287e-4ac0-8c95-4c1721c1ab76
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
+  uuid: 20e295db-a6af-4006-bfd6-91453f169968
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiSFM1N0lLQmx2UU1qRzlnTiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: 057.electrocellco-cf-057.workers.dev
 - name: 🇨🇿 捷克 (Czech) 02 - xiaohe
-  server: 153.76.185.152
-  port: 3090
+  server: cfoi-2fx16g3-8ry2kdxmcj.wjesv2ila3rxbuhpc2nsugrachgawk.workers.dev
+  port: 443
   udp: true
   type: vless
-  uuid: b55a33d7-83ee-416a-971e-eaaa0c928043
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
-- name: 🇨🇿 捷克 (Czech) 03 - xiaohe
-  server: 153.76.185.86
-  port: 3090
-  udp: true
-  type: vless
-  uuid: b55a33d7-83ee-416a-971e-eaaa0c928043
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
-- name: 🇨🇿 捷克 (Czech) 04 - xiaohe
-  server: 194.87.59.19
-  port: 2085
-  udp: true
-  type: vless
-  uuid: b55a33d7-83ee-416a-971e-eaaa0c928043
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
+  uuid: 513beae3-56e7-4954-a17e-930e06237b27
+  tls: true
+  servername: cfoi-2fx16g3-8ry2kdxmcj.wjesv2ila3rxbuhpc2nsugrachgawk.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: '/vl/1NM75lSM9FVMO5loRH5RSHTFj1g?ed=2560 '
+    headers:
+      Host: cfoi-2fx16g3-8ry2kdxmcj.wjesv2ila3rxbuhpc2nsugrachgawk.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -47,8 +37,6 @@ proxy-groups:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
-  - 🇨🇿 捷克 (Czech) 03 - xiaohe
-  - 🇨🇿 捷克 (Czech) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -56,7 +44,5 @@ proxy-groups:
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
-  - 🇨🇿 捷克 (Czech) 03 - xiaohe
-  - 🇨🇿 捷克 (Czech) 04 - xiaohe
 rules:
 - MATCH,PROXIES
