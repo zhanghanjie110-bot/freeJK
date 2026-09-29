@@ -6,32 +6,32 @@ log-level: info
 proxies:
 - name: 🇱🇹 立陶宛 (Lithuania) 01 - xiaohe
   server: 195.238.126.20
-  port: 9012
+  port: 9001
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: xaupMUvhptwxdDUg
+  password: UkXRsXvR6buDMG2Y
 - name: 🇱🇹 立陶宛 (Lithuania) 02 - xiaohe
+  server: 195.238.126.20
+  port: 9011
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: M3t2ZEQcMGRWBjRa
+- name: 🇱🇹 立陶宛 (Lithuania) 03 - xiaohe
   server: 195.238.126.20
   port: 9078
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: JCJpbRbQZNw9XFZG
-- name: 🇱🇹 立陶宛 (Lithuania) 03 - xiaohe
-  server: 195.238.126.20
-  port: 9002
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: b8KkNDjEd5QqFyRm
 - name: 🇱🇹 立陶宛 (Lithuania) 04 - xiaohe
   server: 195.238.126.20
-  port: 9001
+  port: 9086
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: UkXRsXvR6buDMG2Y
+  password: 37Z4TFCYhfxcpc9Q
 - name: 🇱🇹 立陶宛 (Lithuania) 05 - xiaohe
   server: 195.238.126.20
   port: 9068
@@ -41,18 +41,18 @@ proxies:
   password: mwgRg9hRq3b4Qnwb
 - name: 🇱🇹 立陶宛 (Lithuania) 06 - xiaohe
   server: 195.238.126.20
-  port: 9011
+  port: 9002
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: M3t2ZEQcMGRWBjRa
+  password: b8KkNDjEd5QqFyRm
 - name: 🇱🇹 立陶宛 (Lithuania) 07 - xiaohe
   server: 195.238.126.20
-  port: 9086
+  port: 9012
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 37Z4TFCYhfxcpc9Q
+  password: xaupMUvhptwxdDUg
 - name: 🇱🇹 立陶宛 (Lithuania) 08 - xiaohe
   server: 195.238.126.20
   port: 9008
@@ -61,19 +61,6 @@ proxies:
   cipher: aes-256-cfb
   password: y9VURyNzJWNRYEGQ
 - name: 🇱🇹 立陶宛 (Lithuania) 09 - xiaohe
-  server: lithuania-2.kochvpn.pw
-  port: 443
-  udp: true
-  type: vless
-  uuid: 2923fef2-3b52-a9c2-cde4-c2343eb74a2c
-  tls: true
-  servername: lithuania-2.kochvpn.pw
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /stream/ws
-- name: 🇱🇹 立陶宛 (Lithuania) 10 - xiaohe
   server: 94.176.234.161
   port: 443
   udp: true
@@ -100,7 +87,6 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 07 - xiaohe
   - 🇱🇹 立陶宛 (Lithuania) 08 - xiaohe
   - 🇱🇹 立陶宛 (Lithuania) 09 - xiaohe
-  - 🇱🇹 立陶宛 (Lithuania) 10 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -115,6 +101,5 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 07 - xiaohe
   - 🇱🇹 立陶宛 (Lithuania) 08 - xiaohe
   - 🇱🇹 立陶宛 (Lithuania) 09 - xiaohe
-  - 🇱🇹 立陶宛 (Lithuania) 10 - xiaohe
 rules:
 - MATCH,PROXIES
