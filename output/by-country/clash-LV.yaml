@@ -16,7 +16,7 @@ proxies:
     public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
     short-id: 33acba1b
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
   server: 104.252.19.114
   port: 8443
@@ -28,7 +28,7 @@ proxies:
   reality-opts:
     public-key: cD8mVX41lqyVGCuPz0-tQWcNqkMxiPZxU7JJsyyNAEI
   servername: omvpn.info
-  client-fingerprint: safari
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
