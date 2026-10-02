@@ -4,17 +4,9 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - xiaohe",
-      "server": "zfd-hkv2.kunlun01dns.com",
-      "server_port": 16115,
-      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
-      "security": "auto"
-    },
-    {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe",
-      "server": "218.250.216.236",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe",
+      "server": "a736eb68-tmb1c0-tpkh0c-1r7od.hk2.hyhuawei.com",
       "server_port": 443,
       "uuid": "6d56436c-150d-11f0-b0c8-f23c913c8d2b",
       "tls": {
@@ -22,7 +14,7 @@
         "server_name": "download.windowsupdate.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -32,30 +24,46 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - xiaohe",
-      "server": "zfd-hkv2.kunlun01dns.com",
-      "server_port": 16112,
-      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
-      "security": "auto"
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe",
+      "server": "ac91889e-tmm5c0-u3xqxa-1q91p.hk3.hyhuawei.com",
+      "server_port": 443,
+      "password": "c11ff50c-f582-11ee-94df-f23c9164ca5d",
+      "tls": {
+        "enabled": true,
+        "server_name": "ac91889e-tmm5c0-u3xqxa-1q91p.hk3.hyhuawei.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe",
+      "server": "4e3ff39f-tmm5c0-tr9h64-1f1f1.nw4.hyhuawei.com",
+      "server_port": 443,
+      "password": "61c4be90-6235-11ec-a8bf-f23c91cfbbc9",
+      "tls": {
+        "enabled": true,
+        "server_name": "4e3ff39f-tmm5c0-tr9h64-1f1f1.nw4.hyhuawei.com",
+        "insecure": true
+      }
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe",
         "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - xiaohe"
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe",
         "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - xiaohe"
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

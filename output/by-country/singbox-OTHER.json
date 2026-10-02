@@ -6,49 +6,48 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "104.21.3.219",
-      "server_port": 443,
-      "uuid": "8be461cb-a0df-47cf-bc0d-4d9e6a22fa74",
-      "tls": {
-        "enabled": true,
-        "server_name": "ccs2g.pai50288.uk",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
+      "server": "cctvhikvision.center",
+      "server_port": 2052,
+      "uuid": "e3fb01b6-69b4-41d7-babf-696d992de194",
       "transport": {
         "type": "ws",
-        "path": "/pai50288",
+        "path": "/@BlueKnight_net--@BlueKnight_net",
         "headers": {
-          "Host": "ccs2g.pai50288.uk"
+          "Host": "uwu.blueknightnet.qzz.io"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 02 - xiaohe",
-      "server": "104.21.3.219",
-      "server_port": 443,
-      "uuid": "8be461cb-a0df-47cf-bc0d-4d9e6a22fa74",
+      "server": "cctvhikvision.center",
+      "server_port": 2052,
+      "uuid": "aa5d861a-7799-41a7-bdf4-7a6414cf98fd",
+      "transport": {
+        "type": "ws",
+        "path": "/@BlueKnight_net--@BlueKnight_net",
+        "headers": {
+          "Host": "uwu.blueknightnet.qzz.io"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 03 - xiaohe",
+      "server": "undef.network",
+      "server_port": 2053,
+      "uuid": "aa5d861a-7799-41a7-bdf4-7a6414cf98fd",
       "tls": {
         "enabled": true,
-        "server_name": "ccs2g.pai50288.uk",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1",
-          "h3"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "uwu.blueknightnet.qzz.io",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/pai50288"
+        "path": "/@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net",
+        "headers": {
+          "Host": "uwu.blueknightnet.qzz.io"
+        }
       }
     },
     {
@@ -57,7 +56,8 @@
       "outbounds": [
         "auto",
         "🌐 其他地区 (Other) 01 - xiaohe",
-        "🌐 其他地区 (Other) 02 - xiaohe"
+        "🌐 其他地区 (Other) 02 - xiaohe",
+        "🌐 其他地区 (Other) 03 - xiaohe"
       ]
     },
     {
@@ -65,7 +65,8 @@
       "tag": "auto",
       "outbounds": [
         "🌐 其他地区 (Other) 01 - xiaohe",
-        "🌐 其他地区 (Other) 02 - xiaohe"
+        "🌐 其他地区 (Other) 02 - xiaohe",
+        "🌐 其他地区 (Other) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
