@@ -11,6 +11,26 @@ proxies:
   type: vless
   uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
+  server: 144.31.232.216
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 06e88dd6-e264-4981-8c26-d7ab17348ab2
+  sni: fi01.clgate.network
+  skip-cert-verify: false
+- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
+  server: 35.228.61.63
+  port: 443
+  udp: true
+  type: vless
+  uuid: 06e58eed-afc8-4cbf-a0bf-1b7b42e1a87f
+  tls: true
+  reality-opts:
+    public-key: wJwb5WExAnmGiq9mmjtMvoA8E-k10u5VvPegm9RomWU
+    short-id: d4b34bc6b3d2b5ab
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -22,7 +42,7 @@ proxies:
     short-id: d368b94e275ab080
   servername: www.google.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
+- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
   server: 45.149.147.97
   port: 443
   udp: true
@@ -34,68 +54,15 @@ proxies:
     public-key: AcuvO982QLzf76fVydfSuJIiF5520rmj7AxpaxyRwUg
     short-id: d345ad4657adeef9
   servername: google.com
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  server: 212.147.245.198
-  port: 443
-  udp: true
-  type: vless
-  uuid: 042d2d08-2973-5d10-97ad-3b75f16bbe54
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: xwLNHc6jBOg5Ddr1LezwY7I45nP485Qfu1YJXMKwVnI
-    short-id: 330a464a00000000
-  servername: online.1c.ru
-  client-fingerprint: edge
-- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  server: 144.31.27.215
-  port: 43000
-  udp: true
-  type: vless
-  uuid: 47f79fc1-0646-40e8-8a58-73e85d183d5a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: dxCQnOekn14riFxt3vdwDNydvW47FsmwFG6BJ2mUgEg
-    short-id: 568d87a47271344e
-  servername: 144.31.27.215
   client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
-  server: 35.228.61.63
-  port: 443
-  udp: true
-  type: vless
-  uuid: 06e58eed-afc8-4cbf-a0bf-1b7b42e1a87f
-  tls: true
-  reality-opts:
-    public-key: wJwb5WExAnmGiq9mmjtMvoA8E-k10u5VvPegm9RomWU
-    short-id: d4b34bc6b3d2b5ab
-  servername: www.cloudflare.com
-  client-fingerprint: safari
-- name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
   server: 144.31.212.253
   port: 443
   udp: true
   type: hysteria2
   password: cf83b611-6cba-4535-adcb-8da06c6a9146
   sni: vps155-edge.kermemehori.ru
-  skip-cert-verify: true
-- name: 🇫🇮 芬兰 (Finland) 08 - xiaohe
-  server: 109.94.164.185
-  port: 10210
-  udp: true
-  type: vless
-  uuid: ce4b2104-f1fe-4216-ad67-8c21869b9118
-  tls: true
-  reality-opts:
-    public-key: twRm8a1BBdz2Q5jTuNbXxA7ZdtDPAyQNEycDYkW9DFc
-    short-id: 13121b7150ad7fc6
-  servername: firebaseperusertopics-pa.googleapis.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -107,8 +74,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
   - 🇫🇮 芬兰 (Finland) 05 - xiaohe
   - 🇫🇮 芬兰 (Finland) 06 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 07 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -120,7 +85,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
   - 🇫🇮 芬兰 (Finland) 05 - xiaohe
   - 🇫🇮 芬兰 (Finland) 06 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 07 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 08 - xiaohe
 rules:
 - MATCH,PROXIES

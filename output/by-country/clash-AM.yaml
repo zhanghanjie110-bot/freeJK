@@ -5,13 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe
-  server: us3.xiaoliyu.cyou
-  port: 18333
+  server: 135.84.79.30
+  port: 8880
   udp: true
-  type: hysteria2
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  sni: us3.xiaoliyu.cyou
-  skip-cert-verify: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime35.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
