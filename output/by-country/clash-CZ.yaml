@@ -5,7 +5,22 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: cz.monkora.org
+  server: 104.21.86.79
+  port: 443
+  udp: true
+  type: vless
+  uuid: 23e34376-aa47-4c8d-97ea-02915e01fcca
+  tls: true
+  servername: j3bx1s9mk2sylw66yj-hsk.tjsjrkk8gbhts0q5-0os.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vl/GibGgsdlL8yA5jaUVLzA1Z?ed=2560
+    headers:
+      Host: j3bx1s9mk2sylw66yj-hsk.tjsjrkk8gbhts0q5-0os.workers.dev
+- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
+  server: 86.54.82.184
   port: 443
   udp: true
   type: vless
@@ -15,7 +30,7 @@ proxies:
     public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
   servername: example.org
   client-fingerprint: firefox
-- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
+- name: 🇨🇿 捷克 (Czech) 03 - xiaohe
   server: 85.117.235.50
   port: 443
   udp: true
@@ -27,8 +42,8 @@ proxies:
     public-key: PmdZ2ETkHc0zjYcs22xT_wyZk5fEpX7mg7RP396HBBc
     short-id: 232b1b09e45325a4
   servername: cz1.animeteka.info
-  client-fingerprint: ''
-- name: 🇨🇿 捷克 (Czech) 03 - xiaohe
+  client-fingerprint: firefox
+- name: 🇨🇿 捷克 (Czech) 04 - xiaohe
   server: 153.76.190.41
   port: 8443
   udp: true
@@ -44,6 +59,7 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
   - 🇨🇿 捷克 (Czech) 03 - xiaohe
+  - 🇨🇿 捷克 (Czech) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -52,5 +68,6 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
   - 🇨🇿 捷克 (Czech) 03 - xiaohe
+  - 🇨🇿 捷克 (Czech) 04 - xiaohe
 rules:
 - MATCH,PROXIES
