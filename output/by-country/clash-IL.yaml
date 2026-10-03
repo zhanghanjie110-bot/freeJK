@@ -29,7 +29,7 @@ proxies:
     public-key: r4Dp3mztZaizbDk28rEOkLikk7erR9dzzc-Jrsgraho
     short-id: a1b2c3d4
   servername: store.steampowered.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇮🇱 以色列 (Israel) 03 - xiaohe
   server: 34.165.56.30
   port: 443
@@ -41,7 +41,7 @@ proxies:
     public-key: AeQDUAVCESyA1hFkw6lENmgWAY3sBH9CFPpPAddPwVc
     short-id: fffff8acddadcac3
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
