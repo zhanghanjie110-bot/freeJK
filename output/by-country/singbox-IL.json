@@ -27,22 +27,11 @@
     {
       "type": "vless",
       "tag": "🇮🇱 以色列 (Israel) 02 - xiaohe",
-      "server": "es.srv.dvzh.net",
-      "server_port": 443,
-      "uuid": "91344c03-b37f-42c5-90f1-cbb95c5cf256",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "es.srv.dvzh.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "9GEc6lOjnGQyyE1951OZSBMWt4uCXsOjKyj9fysxHH0",
-          "short_id": "e4e77e76e6e49da7"
-        }
+      "server": "31.57.185.253",
+      "server_port": 55932,
+      "uuid": "c6117371-7a24-4621-bac0-f70fa266b061",
+      "transport": {
+        "type": "grpc"
       }
     },
     {
