@@ -14,44 +14,62 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
-- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
-  server: test.keoplentuio.xyz
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
   server: 218.237.185.234
   port: 4652
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: qwerREWQ@@
-- name: 🇸🇬 新加坡 (Singapore) 04 (家宽) - xiaohe
-  server: s3.huhiuh.space
-  port: 18642
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - xiaohe
+  server: dog-hk.kunlun01dns.com
+  port: 21021
   udp: true
-  type: hysteria2
-  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
-  sni: s3.huhiuh.space
-  skip-cert-verify: true
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
+  server: fujrdt.d6f54hd1j.cc
+  port: 443
+  udp: true
+  type: vmess
+  uuid: d877dc6f-7323-4b47-a7dd-14228cbae854
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: fujrdt.d6f54hd1j.cc
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fujrdt.d6f54hd1j.cc
+- name: 🇹🇷 土耳其 (Turkey) 05 (移动家宽) - xiaohe
+  server: test.keoplentuio.xyz
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 04 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 05 (移动家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 04 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 05 (移动家宽) - xiaohe
 rules:
 - MATCH,PROXIES
