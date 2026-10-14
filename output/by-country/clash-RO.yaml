@@ -41,6 +41,21 @@ proxies:
   servername: gateway.icloud.com
   client-fingerprint: chrome
 - name: 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
+  server: 154.46.31.106
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
+- name: 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
+  server: 185.156.44.99
+  port: 443
+  udp: true
+  type: hysteria2
+  password: gf1:gfhysteria2024
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇷🇴 罗马尼亚 (Romania) 06 - xiaohe
   server: 46.28.67.55
   port: 443
   udp: true
@@ -52,22 +67,7 @@ proxies:
     public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
     short-id: d06d78e974491b6e
   servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
-  server: bogging-eyeteeth-fly.freesocks.work
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
-- name: 🇷🇴 罗马尼亚 (Romania) 06 - xiaohe
-  server: 185.156.44.99
-  port: 443
-  udp: true
-  type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: t.me
-  skip-cert-verify: true
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
