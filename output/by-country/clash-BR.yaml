@@ -13,15 +13,15 @@ proxies:
   sni: findtemporaryworkandfreelancerprojectsonlineplatform.com
   skip-cert-verify: false
 - name: 🇧🇷 巴西 (Brazil) 02 - xiaohe
-  server: br001.zestapp778.com
-  port: 15040
+  server: 147.15.108.14
+  port: 20000
   udp: true
-  type: vless
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  tls: true
-  servername: br.zestapp778.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  type: hysteria2
+  password: CyG0RFxMjzs41uQD4OLuHQ==
+  sni: rmgyvpn.rest
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: CyG0RFxMjzs41uQD4OLuHQ==
 proxy-groups:
 - name: PROXIES
   type: select
