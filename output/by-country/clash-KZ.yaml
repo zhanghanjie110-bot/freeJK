@@ -16,7 +16,7 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: 3h-kazakhstan1.09vpn.com
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
   server: 38.107.234.57
   port: 80
@@ -29,7 +29,7 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+      Host: viber.com
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
   server: 38.107.234.57
   port: 80
@@ -53,7 +53,7 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: viber.com
+      Host: google.com
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaohe
   server: 38.107.234.57
   port: 80
@@ -66,7 +66,7 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: google.com
+      Host: 3h-kazakhstan1.09vpn.com
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - xiaohe
   server: 38.107.234.57
   port: 80
@@ -79,8 +79,19 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: 3h-kazakhstan1.09vpn.com
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - xiaohe
+  server: 46.8.43.125
+  port: 443
+  udp: true
+  type: vless
+  uuid: 846cedee-2a52-4a62-a0b9-11850ead6a8b
+  tls: true
+  reality-opts:
+    public-key: ER-T5En54-sn6IXy7jU8vQVcBbOiWvznnezf3qZ273w
+  servername: kz-central.v8x2b.lol
+  client-fingerprint: chrome
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 08 - xiaohe
   server: 3h-kazakhstan1.09vpn.com
   port: 80
   udp: true
@@ -92,31 +103,8 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: 3h-kazakhstan1.09vpn.com
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 08 - xiaohe
-  server: 46.8.43.125
-  port: 443
-  udp: true
-  type: vless
-  uuid: 846cedee-2a52-4a62-a0b9-11850ead6a8b
-  tls: true
-  reality-opts:
-    public-key: ER-T5En54-sn6IXy7jU8vQVcBbOiWvznnezf3qZ273w
-  servername: kz-central.v8x2b.lol
-  client-fingerprint: firefox
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 09 - xiaohe
-  server: 109.248.170.119
-  port: 13447
-  udp: true
-  type: vless
-  uuid: b573cefb-7bc7-4a42-b407-b8b534e66773
-  tls: true
-  reality-opts:
-    public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
-    short-id: '83'
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 10 - xiaohe
   server: 83.222.23.81
   port: 38065
   udp: true
@@ -126,6 +114,30 @@ proxies:
   reality-opts:
     public-key: dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo
     short-id: fa
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 10 - xiaohe
+  server: 178.236.16.98
+  port: 35728
+  udp: true
+  type: vless
+  uuid: a00d89f6-ab7e-4e30-a5e5-54c701d62c93
+  tls: true
+  reality-opts:
+    public-key: vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng
+    short-id: 69a2
+  servername: yahoo.com
+  client-fingerprint: random
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 11 - xiaohe
+  server: 109.248.170.119
+  port: 13447
+  udp: true
+  type: vless
+  uuid: b573cefb-7bc7-4a42-b407-b8b534e66773
+  tls: true
+  reality-opts:
+    public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
+    short-id: '83'
   servername: yahoo.com
   client-fingerprint: chrome
 proxy-groups:
@@ -143,6 +155,7 @@ proxy-groups:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 08 - xiaohe
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 09 - xiaohe
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 10 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -158,5 +171,6 @@ proxy-groups:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 08 - xiaohe
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 09 - xiaohe
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 10 - xiaohe
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 11 - xiaohe
 rules:
 - MATCH,PROXIES

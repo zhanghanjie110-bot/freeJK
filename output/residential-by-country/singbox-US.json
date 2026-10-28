@@ -5,23 +5,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇲🇰 MK 01 - xiaohe",
-      "server": "89.185.82.151",
-      "server_port": 10443,
-      "uuid": "0869a7d7-b8e8-42be-8bca-84b0ab07744a",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe",
+      "server": "789156.xyz",
+      "server_port": 443,
+      "uuid": "5f11c240-89df-494c-9c81-8b619023bb58",
       "tls": {
         "enabled": true,
-        "server_name": "stackoverflow.com",
+        "server_name": "789156.xyz",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "XNfikFybWtjJjWU7-QBGrr-D9YUW0uSK_sR7mDDUmRU",
-          "short_id": "6ba85179"
+          "fingerprint": "chrome"
         }
+      },
+      "transport": {
+        "type": "ws"
       }
     },
     {
@@ -29,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇰 MK 01 - xiaohe"
+        "🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇰 MK 01 - xiaohe"
+        "🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
