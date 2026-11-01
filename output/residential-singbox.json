@@ -4,26 +4,87 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe",
-      "server": "49.254.204.133",
-      "server_port": 1774,
-      "method": "aes-256-cfb",
-      "password": "1234!@#$"
+      "type": "trojan",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
+      "server": "125.227.86.45",
+      "server_port": 443,
+      "password": "0a9f1f5a397bd427",
+      "tls": {
+        "enabled": true,
+        "server_name": "TG.freecodes",
+        "insecure": true,
+        "alpn": [
+          "h2"
+        ]
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "db"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe",
+      "server": "0e05f970-tki800-traezq-1t5n1.hk2.hyhuawei.com",
+      "server_port": 443,
+      "uuid": "ea800f9e-ca6c-11ef-8e74-f23c913c8d2b",
+      "tls": {
+        "enabled": true,
+        "server_name": "download.windowsupdate.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe",
+      "server": "112.120.123.140",
+      "server_port": 443,
+      "password": "e1dee7c0-cff7-11eb-a8bf-f23c91cfbbc9",
+      "tls": {
+        "enabled": true,
+        "server_name": "525b1a38-tly2o0-tn5bnx-19xg1.nw4.hyhuawei.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe",
+      "server": "b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com",
+      "server_port": 443,
+      "password": "aed1cc24-351d-11ef-ba52-f23c9164ca5d",
+      "tls": {
+        "enabled": true,
+        "server_name": "b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com",
+        "insecure": true
+      }
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

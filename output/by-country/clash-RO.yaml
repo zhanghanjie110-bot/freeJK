@@ -47,12 +47,23 @@ proxies:
   servername: gateway.icloud.com
   client-fingerprint: chrome
 - name: 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
+  server: 88.80.135.65
+  port: 4127
+  udp: true
+  type: vless
+  uuid: 33972eb3-3f57-4558-80ff-b6926480ff69
+  network: httpupgrade
+  httpupgrade-opts:
+    path: /Telegram=@AmyraxVPN
+    headers:
+      Host: 88.80.135.65
+- name: 🇷🇴 罗马尼亚 (Romania) 06 - xiaohe
   server: 185.156.44.99
   port: 443
   udp: true
   type: hysteria2
   password: gf1:gfhysteria2024
-  sni: whatsapp.com
+  sni: www.amazon.com
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
@@ -64,6 +75,7 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
+  - 🇷🇴 罗马尼亚 (Romania) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -74,5 +86,6 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
+  - 🇷🇴 罗马尼亚 (Romania) 06 - xiaohe
 rules:
 - MATCH,PROXIES

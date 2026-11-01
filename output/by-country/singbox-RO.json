@@ -69,14 +69,26 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇷🇴 罗马尼亚 (Romania) 05 - xiaohe",
+      "server": "88.80.135.65",
+      "server_port": 4127,
+      "uuid": "33972eb3-3f57-4558-80ff-b6926480ff69",
+      "transport": {
+        "type": "httpupgrade",
+        "path": "/Telegram=@AmyraxVPN",
+        "host": "88.80.135.65"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 06 - xiaohe",
       "server": "185.156.44.99",
       "server_port": 443,
       "password": "gf1:gfhysteria2024",
       "tls": {
         "enabled": true,
-        "server_name": "whatsapp.com",
+        "server_name": "www.amazon.com",
         "insecure": true
       }
     },
@@ -89,7 +101,8 @@
         "🇷🇴 罗马尼亚 (Romania) 02 - xiaohe",
         "🇷🇴 罗马尼亚 (Romania) 03 - xiaohe",
         "🇷🇴 罗马尼亚 (Romania) 04 - xiaohe",
-        "🇷🇴 罗马尼亚 (Romania) 05 - xiaohe"
+        "🇷🇴 罗马尼亚 (Romania) 05 - xiaohe",
+        "🇷🇴 罗马尼亚 (Romania) 06 - xiaohe"
       ]
     },
     {
@@ -100,7 +113,8 @@
         "🇷🇴 罗马尼亚 (Romania) 02 - xiaohe",
         "🇷🇴 罗马尼亚 (Romania) 03 - xiaohe",
         "🇷🇴 罗马尼亚 (Romania) 04 - xiaohe",
-        "🇷🇴 罗马尼亚 (Romania) 05 - xiaohe"
+        "🇷🇴 罗马尼亚 (Romania) 05 - xiaohe",
+        "🇷🇴 罗马尼亚 (Romania) 06 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
