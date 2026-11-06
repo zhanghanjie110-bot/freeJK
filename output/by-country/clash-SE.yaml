@@ -12,19 +12,6 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  server: 31.76.81.144
-  port: 443
-  udp: true
-  type: vless
-  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg
-    short-id: a1037b25dcef6aa7
-  servername: sw.golangwikito.cfd
-  client-fingerprint: firefox
-- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
   server: 70.34.207.14
   port: 443
   udp: true
@@ -32,26 +19,7 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: searchhealthcarejobsandbuildmedicalcareerpathway.com
   skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
-  server: 95.143.196.32
-  port: 443
-  udp: true
-  type: trojan
-  password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
-  sni: connect-se.mimowhat.online
-  skip-cert-verify: true
-- name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
-  server: 62.93.166.184
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 06 - xiaohe
+- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
   server: 5.178.109.174
   port: 14430
   udp: true
@@ -62,7 +30,18 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 瑞典 (Sweden) 07 - xiaohe
+- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
+  server: 62.93.166.184
+  port: 1270
+  udp: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
   server: 138.199.55.230
   port: 1270
   udp: true
@@ -73,7 +52,15 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 08 - xiaohe
+- name: 🇸🇪 瑞典 (Sweden) 06 - xiaohe
+  server: 95.143.196.97
+  port: 443
+  udp: true
+  type: trojan
+  password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
+  sni: connect-se.mimowhat.online
+  skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 07 - xiaohe
   server: 194.104.94.141
   port: 443
   udp: true
@@ -82,22 +69,7 @@ proxies:
   tls: true
   servername: se3.shtil.io
   skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇸🇪 瑞典 (Sweden) 09 - xiaohe
-  server: 89.22.224.146
-  port: 43788
-  udp: true
-  type: vless
-  uuid: acc10ba5-a222-44b3-8a1a-4f247ffc6466
-  tls: true
-  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
-  skip-cert-verify: false
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -110,8 +82,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 07 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 08 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -124,7 +94,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 07 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 08 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 09 - xiaohe
 rules:
 - MATCH,PROXIES

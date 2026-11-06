@@ -5,17 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
-  server: 114.129.43.30
-  port: 8880
-  udp: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime04.workers.dev
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
   server: 38.107.234.57
   port: 80
   udp: true
@@ -27,8 +16,8 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: 3h-kazakhstan1.09vpn.com
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
   server: 95.57.50.87
   port: 443
   udp: true
@@ -41,19 +30,6 @@ proxies:
     short-id: 4000cdda6278d236
   servername: kz1.japancase.site
   client-fingerprint: firefox
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe
-  server: 3h-kazakhstan1.09vpn.com
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
-  tls: true
-  servername: 3h-kazakhstan1.09vpn.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vless/
 proxy-groups:
 - name: PROXIES
   type: select
@@ -61,8 +37,6 @@ proxy-groups:
   - AUTO
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -70,7 +44,5 @@ proxy-groups:
   proxies:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -4,22 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe",
-      "server": "114.129.43.30",
-      "server_port": 8880,
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "vms.lifetime04.workers.dev"
-        }
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe",
       "server": "38.107.234.57",
       "server_port": 80,
       "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
@@ -28,13 +14,13 @@
         "type": "ws",
         "path": "/vmess/",
         "headers": {
-          "Host": "3h-kazakhstan1.09vpn.com"
+          "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe",
       "server": "95.57.50.87",
       "server_port": 443,
       "uuid": "db80088c-32a1-4cb8-a907-0f3cb7844152",
@@ -54,34 +40,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe",
-      "server": "3h-kazakhstan1.09vpn.com",
-      "server_port": 8443,
-      "uuid": "2424febb-43cb-488d-bdd1-401e923c8e48",
-      "tls": {
-        "enabled": true,
-        "server_name": "3h-kazakhstan1.09vpn.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vless/"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe"
       ]
     },
     {
@@ -89,9 +53,7 @@
       "tag": "auto",
       "outbounds": [
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
