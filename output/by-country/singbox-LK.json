@@ -6,26 +6,22 @@
     {
       "type": "vless",
       "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe",
-      "server": "141.193.213.20",
-      "server_port": 2087,
-      "uuid": "0ef68b97-f878-4cea-b756-c56ea3632851",
+      "server": "170.114.45.6",
+      "server_port": 2096,
+      "uuid": "efd11a89-7506-44ce-95b6-6654859f155b",
       "tls": {
         "enabled": true,
-        "server_name": "free.vkehi.store",
+        "server_name": "pcloud.z-tas.com",
         "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "android"
+          "fingerprint": "firefox"
         }
       },
       "transport": {
         "type": "ws",
-        "path": "/",
         "headers": {
-          "Host": "free.vkehi.store"
+          "Host": "pcloud.z-tas.com"
         }
       }
     },

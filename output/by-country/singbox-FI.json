@@ -4,28 +4,28 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-      "server": "95.216.27.15",
-      "server_port": 2053,
-      "uuid": "b79d736d-0f10-4169-b626-362059d18204",
+      "server": "65.108.240.210",
+      "server_port": 39018,
+      "uuid": "8ca123a8-720b-47c5-bd0c-637431418b09",
+      "security": "auto"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
+      "server": "177.202.75.56",
+      "server_port": 443,
+      "password": "146d567c-6335-4e63-a8aa-7ec068642440",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs",
-          "short_id": "10351b07c712d2a2"
-        }
+        "server_name": "fi1.obxodvpn.us",
+        "insecure": false
       }
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - xiaohe",
       "server": "45.144.234.157",
       "server_port": 14430,
       "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
@@ -38,75 +38,13 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - xiaohe",
-      "server": "129.6.29.252",
-      "server_port": 80,
-      "uuid": "fe4d2b3e-965f-4389-a6e4-05887ef5fd2b",
-      "security": "auto",
-      "transport": {
-        "type": "httpupgrade",
-        "path": "/f9bGbG7ZNy5L0tzXKZNxSX4q",
-        "host": "bmi.ir.draft.co.impossible.com.ir.bmi.ir.com.iran.ir6.ifilmino.com"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - xiaohe",
-      "server": "6.bmi.ir.asopardaz.ir",
-      "server_port": 8443,
-      "uuid": "fe4d2b3e-965f-4389-a6e4-05887ef5fd2b",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "hostgator.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs",
-          "short_id": "e915"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇫🇮 芬兰 (Finland) 05 - xiaohe",
-      "server": "104.24.0.1",
-      "server_port": 2053,
-      "password": "gHQP0D7D15",
-      "tls": {
-        "enabled": true,
-        "server_name": "marvdasht.phonecomparisonblog.org",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "marvdasht.phonecomparisonblog.org"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇫🇮 芬兰 (Finland) 01 - xiaohe",
         "🇫🇮 芬兰 (Finland) 02 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 03 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 04 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 05 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 03 - xiaohe"
       ]
     },
     {
@@ -115,9 +53,7 @@
       "outbounds": [
         "🇫🇮 芬兰 (Finland) 01 - xiaohe",
         "🇫🇮 芬兰 (Finland) 02 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 03 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 04 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 05 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
