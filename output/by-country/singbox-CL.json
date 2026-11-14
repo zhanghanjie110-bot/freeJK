@@ -4,23 +4,18 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇲🇨 MC 01 - xiaohe",
-      "server": "107.189.23.205",
+      "type": "trojan",
+      "tag": "🇨🇱 智利 (Chile) 01 - xiaohe",
+      "server": "64.176.7.205",
       "server_port": 443,
-      "uuid": "63eecfaa-50b7-4ea9-9bec-a176bf03a215",
-      "flow": "xtls-rprx-vision",
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "suffolkprimarycare.uk",
+        "server_name": "64.176.7.205",
+        "insecure": true,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "5Xgf3UO6yZb7gCK3R3GULk8jyNIp7Sr-26YXZfSW71c",
-          "short_id": "13975a8e0bd50e7c"
+          "fingerprint": "chrome"
         }
       }
     },
@@ -29,14 +24,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇨 MC 01 - xiaohe"
+        "🇨🇱 智利 (Chile) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇨 MC 01 - xiaohe"
+        "🇨🇱 智利 (Chile) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
