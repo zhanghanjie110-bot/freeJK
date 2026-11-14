@@ -5,22 +5,13 @@
   "outbounds": [
     {
       "type": "vmess",
-      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "US122201.ssgreen.org",
-      "server_port": 443,
-      "uuid": "7a8f7391-1711-4fcc-b29b-562a00f357f3",
+      "tag": "🇨🇳 CN 01 - xiaohe",
+      "server": "39.108.113.127",
+      "server_port": 10086,
+      "uuid": "d50cc563-0c03-4136-899f-85cbc0b02699",
       "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "US122201.ssgreen.org",
-        "insecure": false
-      },
       "transport": {
-        "type": "ws",
-        "path": "/wes",
-        "headers": {
-          "Host": "US122201.ssgreen.org"
-        }
+        "type": "ws"
       }
     },
     {
@@ -28,14 +19,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇨🇳 CN 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇨🇳 CN 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
