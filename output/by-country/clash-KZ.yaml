@@ -18,7 +18,7 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
-  server: 3h-kazakhstan1.09vpn.com
+  server: 38.107.234.57
   port: 8443
   udp: true
   type: vless
@@ -26,7 +26,6 @@ proxies:
   tls: true
   servername: 3h-kazakhstan1.09vpn.com
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /vless/
