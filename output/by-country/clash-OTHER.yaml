@@ -5,21 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 172.64.155.209
-  port: 8443
+  server: cf.0sm.com
+  port: 80
   udp: true
   type: vmess
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
   alterId: 0
   cipher: auto
-  tls: true
-  servername: v2ray1.dozapp.xyz
-  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /lMnsZUN4/
+    path: /ws
     headers:
-      Host: v2ray1.dozapp.xyz
+      Host: vmess.lbw666.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select

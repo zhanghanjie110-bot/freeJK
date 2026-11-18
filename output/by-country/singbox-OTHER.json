@@ -6,20 +6,15 @@
     {
       "type": "vmess",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "172.64.155.209",
-      "server_port": 8443,
-      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
+      "server": "cf.0sm.com",
+      "server_port": 80,
+      "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
       "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "v2ray1.dozapp.xyz",
-        "insecure": false
-      },
       "transport": {
         "type": "ws",
-        "path": "/lMnsZUN4/",
+        "path": "/ws",
         "headers": {
-          "Host": "v2ray1.dozapp.xyz"
+          "Host": "vmess.lbw666.dpdns.org"
         }
       }
     },
