@@ -16,75 +16,8 @@ proxies:
     public-key: bBVqro8tG6swTNoAkjwUzcu4Ew4N4VcyDHzADcGviCs
     short-id: 81959fce
   servername: apple.com
-  client-fingerprint: chrome
+  client-fingerprint: ''
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: 45.144.53.18
-  port: 443
-  udp: true
-  type: vless
-  uuid: 955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: yC04w5WKddcvv6EPSHnqv8uHLaSNK8JFCuRtIJhL1Xc
-  servername: gsdfmb.wey-land.net
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: 45.144.234.157
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  server: 45.144.52.195
-  port: 443
-  udp: true
-  type: vless
-  uuid: 955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: wpKYWqa_j7WXClXDdSL-llXhjH918G_U7jfpHAMSGWk
-  servername: fl-modx.nodexphere.net
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  server: 45.144.52.252
-  port: 443
-  udp: true
-  type: vless
-  uuid: 955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: -GuGq2rg6lgl4LcxHBFhBZCKKEtES2EGeD2qwXilrXI
-  servername: wergmb.wey-land.net
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
-  server: 45.144.53.119
-  port: 443
-  udp: true
-  type: vless
-  uuid: 955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: nwWxKBQS8QaH3RIAqNXJoocBNWatkh7inO-LkkiMR1Y
-  servername: gmsddfgsgfb.wey-land.net
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
-  server: 94.183.164.119
-  port: 24433
-  udp: true
-  type: hysteria2
-  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
-  sni: lakes.blog-forme.ru
-  skip-cert-verify: false
-- name: 🇫🇮 芬兰 (Finland) 08 - xiaohe
   server: 138.124.80.29
   port: 443
   udp: true
@@ -96,6 +29,88 @@ proxies:
     public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
   servername: fin1-r.bankai.party
   client-fingerprint: qq
+- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
+  server: 45.144.52.195
+  port: 443
+  udp: true
+  type: vless
+  uuid: 955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: wpKYWqa_j7WXClXDdSL-llXhjH918G_U7jfpHAMSGWk
+  servername: fl-modx.nodexphere.net
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
+  server: 45.144.53.18
+  port: 443
+  udp: true
+  type: vless
+  uuid: 955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: yC04w5WKddcvv6EPSHnqv8uHLaSNK8JFCuRtIJhL1Xc
+  servername: gsdfmb.wey-land.net
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
+  server: 45.144.234.157
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
+  server: 94.183.164.119
+  port: 24433
+  udp: true
+  type: hysteria2
+  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
+  sni: 94.183.164.119
+  skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
+  server: 45.144.53.119
+  port: 443
+  udp: true
+  type: vless
+  uuid: 955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: nwWxKBQS8QaH3RIAqNXJoocBNWatkh7inO-LkkiMR1Y
+  servername: gmsddfgsgfb.wey-land.net
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 08 - xiaohe
+  server: 104.17.145.145
+  port: 2083
+  udp: true
+  type: vless
+  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
+  tls: true
+  servername: vipfree.dr-ping.ir
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vipfree.dr-ping.ir
+- name: 🇫🇮 芬兰 (Finland) 09 - xiaohe
+  server: 45.144.52.252
+  port: 443
+  udp: true
+  type: vless
+  uuid: 955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: -GuGq2rg6lgl4LcxHBFhBZCKKEtES2EGeD2qwXilrXI
+  servername: wergmb.wey-land.net
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -109,6 +124,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 06 - xiaohe
   - 🇫🇮 芬兰 (Finland) 07 - xiaohe
   - 🇫🇮 芬兰 (Finland) 08 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -122,5 +138,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 06 - xiaohe
   - 🇫🇮 芬兰 (Finland) 07 - xiaohe
   - 🇫🇮 芬兰 (Finland) 08 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 09 - xiaohe
 rules:
 - MATCH,PROXIES
