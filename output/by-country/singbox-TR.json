@@ -6,22 +6,9 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-      "server": "45.141.148.46",
-      "server_port": 443,
-      "uuid": "a30903dc-1bf0-4be5-8b1b-603a3a56211c",
-      "tls": {
-        "enabled": true,
-        "server_name": "tr1b.galioncc.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
-          "short_id": "868419504747f6de"
-        }
-      }
+      "server": "87.76.154.28",
+      "server_port": 57231,
+      "uuid": "c34a41b6-598f-46ac-bea3-8b39a906f922"
     },
     {
       "type": "vless",
@@ -35,7 +22,7 @@
         "server_name": "tr1-r.bankai.party",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
