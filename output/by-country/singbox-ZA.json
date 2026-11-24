@@ -28,7 +28,7 @@
       "tls": {
         "enabled": true,
         "server_name": "explorecareerpathsandunlockprofessionalsuccesstoday.com",
-        "insecure": true
+        "insecure": false
       }
     },
     {
